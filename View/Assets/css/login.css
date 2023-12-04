@@ -1,0 +1,129 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background: #b1c0cf;
+}
+
+#emptyMail,
+#emptyPassword,
+#notFound,
+#sessionerror,
+#empty {
+    display: none;
+}
+
+#emptyMail:target,
+#emptyPassword:target,
+#notFound:target,
+#sessionerror:target,
+#empty:target {
+    display: block;
+    border: 5px solid black;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 15px;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    font-weight: bold;
+    width: 20rem;
+    background: rgb(228, 53, 53);
+    color: red;
+}
+
+.btn {
+    width: 100%;
+}
+
+.bloc_top {
+    width: 100%;
+    text-align: center;
+}
+
+#form {
+    width: 20rem;
+    background-color: white;
+    border-radius: 15px;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid rgb(144, 124, 124);
+    width: 100%;
+    opacity: 1;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+.fade-in {
+    -webkit-animation: fade-in 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+            animation: fade-in 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes pulsate-fwd {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+     transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-in-bottom {
+    0% {
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+header {
+  background-color: #e9ecef;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  background-color: #bcddff;
+  height: 5rem;
+}

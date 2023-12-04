@@ -1,0 +1,138 @@
+main {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  background: #b1c0cf;
+}
+
+.create_form {
+  flex-wrap: wrap;
+  display:flex;
+  flex-direction: column;
+  background: #e9ecef;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+#alert_aside {
+  width: 100%;
+  position: relative;
+  /* animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+  visibility: hidden;
+}
+
+table {
+  width: 100%;
+}
+
+input {
+ border: none;
+ opacity: 1;
+ border-radius: 10px;
+ padding: 0.5rem 1rem;
+ margin: 0.5rem 0;
+ width: 100%;
+ outline: none;
+}
+
+header {
+ background-color: #e9ecef;
+ height: 5rem;
+ display: flex !important;
+ align-items: center;
+ justify-content: space-around;
+}
+
+footer {
+ background-color: #bcddff;
+ height: 5rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+tbody tr{
+  border: 1px solid rgba(0,0,0,.125);
+  background-color: rgb(243, 243, 243);
+}
+
+td {
+  border: 1px solid rgba(0,0,0,.125);
+  padding: 1rem;
+}
+
+select {
+  height: 2.32rem;
+}
+
+.btn-primary {
+  margin: 0.5rem 0;
+}
+
+#artist_name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 73%;
+  margin-top: 2.5rem;
+  border-radius: 5px;
+  background-color: rgb(238, 232, 232)
+}
+
+#artist_name h2 {
+  margin: 0;
+}
+
+.accordion {
+  max-width: 30rem;
+}
+
+.preview_track {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+iframe {
+  width: 90%;
+  height: 14rem;
+  border-radius: 10px;
+  border: none;
+}
+
+#global {
+  display: flex;
+  width: 80%;
+  padding: 1.5rem;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+#global_left {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  max-width: 30rem;
+}
+
+#global_right {
+  width: 55%;
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#right_track, #right_tag {
+  width: 100%;
+  text-align: center;
+  margin: 1rem 0;
+}
